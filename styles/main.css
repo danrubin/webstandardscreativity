@@ -1,0 +1,217 @@
+/*
+-----------------------------------------------
+styles for webstandardscreativity.com
+author: dan rubin
+edited: 2008-08-01
+----------------------------------------------- */
+
+/* remember to remove any resets not needed for this design */
+@import url("reset.css");
+
+/* layout */
+body {
+	background:#efefec url("images/bg-body.jpg") top center;
+	font-family:"helvetica neue", helvetica, arial, sans-serif;
+	min-width:1137px;
+}
+
+#wrapper {
+	background:url("images/bg-wrapper.png") repeat-x;
+	padding:0 30px;
+	text-align:center;
+}
+#container {
+	margin:0 auto;
+	width:1077px;
+	text-align:left;
+}
+
+#header {
+	position:relative;
+	height:122px;
+	color:#9e9e99;
+	font-size:11px;
+	font-weight:bold;
+	line-height:30px;
+	text-transform:uppercase;
+}
+
+#header h1 {
+	position:absolute;
+	bottom:6px;
+	background:url("images/hdr-webstandardscreativity.png") no-repeat;
+	width:938px;
+	height:48px;
+	text-indent:-9999px;
+}
+
+#header h2 {
+	position:absolute;
+	bottom:7px;
+	right:7px;
+	background:url("images/hdr-presentedbyfriendsofed.png") no-repeat;
+	width:147px;
+	height:12px;
+	text-indent:-9999px;
+}
+
+#buylinks {
+	height:28px;
+}
+#buylinks h2 {
+	position:static;
+	background:none;
+	font-size:11px;
+	display:inline;
+}
+#buylinks ul {
+	display:inline;
+}
+#buylinks ul li {
+	display:inline;
+	margin-left:10px;
+}
+#buylinks a {
+	color:#9e9e99;
+	text-decoration:none;
+}
+#buylinks a:hover {
+	color:#8c8c7f;
+	border-bottom:2px solid #c8c8c1;
+}
+
+#downloads {
+	position:absolute;
+	right:0;
+	top:0;
+	width:105px;
+	background-color:#d4d4cd;
+	text-align:right;
+}
+#downloads li {
+	position:relative;
+	height:28px;
+	width:89px;
+	padding-right:16px;
+	background:url("images/downloads-arrow.png") no-repeat 90px 12px;
+}
+#downloads li ul {
+	position:absolute;
+	left:-999em;
+	width:147px;
+	margin-top:-2px;
+	background:#757570;
+	text-transform:none;
+	text-align:left;
+	text-shadow:#000 0 0 0;/* anti-aliasing hack for safari */
+}
+#downloads li:hover { background-color:#757570;background-position:90px -38px;color:#ededea;opacity:.9; }
+#downloads li:hover ul,
+#downloads li.sfhover ul { left:-42px; }
+
+#downloads li li {
+	width:auto;
+	height:auto;
+	padding:0;
+}
+
+#downloads a {
+	display:block;
+	height:21px;
+	padding-top:1px;
+	padding-left:16px;
+	background:url("images/downloads-bullet.png") no-repeat 8px 8px;
+	color:#ededea;
+	line-height:21px;
+	text-decoration:none;
+}
+#downloads a span {
+	padding:0 1px;
+	font-size:8px;
+}
+#downloads a:hover {
+	background-color:#62625c;
+	color:#fff;
+}
+
+ul#authors {
+	position:relative;
+	width:1077px;
+	height:663px;
+	background:url("images/bg-authors.png") no-repeat bottom;
+}
+ul#authors li {
+	float:left;
+	width:105px;
+	height:470px;
+	margin-right:3px;
+}
+ul#authors li.weychert { margin:0; }
+
+ul#authors li a {
+	display:block;
+	width:105px;
+	height:470px;
+	background-position:0 0;
+	background-repeat:no-repeat;
+}
+ul#authors li a span {
+	position:absolute;
+	text-indent:-9999px;
+	background-position:0 0;
+	background-repeat:no-repeat;
+}
+
+ul#authors li.adams a 				{ background-image:url("images/author-photo-adams.jpg"); }
+ul#authors li.boulton a 			{ background-image:url("images/author-photo-boulton.jpg"); }
+ul#authors li.clarke a 				{ background-image:url("images/author-photo-clarke.jpg"); }
+ul#authors li.collison a 			{ background-image:url("images/author-photo-collison.jpg"); }
+ul#authors li.croft a 				{ background-image:url("images/author-photo-croft.jpg"); }
+ul#authors li.featherstone a 		{ background-image:url("images/author-photo-featherstone.jpg"); }
+ul#authors li.lloyd a 				{ background-image:url("images/author-photo-lloyd.jpg"); }
+ul#authors li.marcotte a 			{ background-image:url("images/author-photo-marcotte.jpg"); }
+ul#authors li.rubin a 				{ background-image:url("images/author-photo-rubin.jpg"); }
+ul#authors li.weychert a 			{ background-image:url("images/author-photo-weychert.jpg"); }
+
+ul#authors li.adams a span 			{ bottom:143px;left:44px;width:370px;height:42px;background-image:url("images/author-name-adams.png"); }
+ul#authors li.boulton a span 		{ bottom:143px;left:439px;width:325px;height:42px;background-image:url("images/author-name-boulton.png"); }
+ul#authors li.clarke a span 		{ bottom:143px;left:789px;width:289px;height:42px;background-image:url("images/author-name-clarke.png"); }
+ul#authors li.collison a span 		{ bottom:95px;left:-2px;width:345px;height:42px;background-image:url("images/author-name-collison.png"); }
+ul#authors li.croft a span 			{ bottom:95px;left:370px;width:230px;height:42px;background-image:url("images/author-name-croft.png"); }
+ul#authors li.featherstone a span 	{ bottom:95px;left:627px;width:451px;height:42px;background-image:url("images/author-name-featherstone.png"); }
+ul#authors li.lloyd a span 			{ bottom:47px;left:-1px;width:213px;height:42px;background-image:url("images/author-name-lloyd.png"); }
+ul#authors li.marcotte a span		{ bottom:47px;left:238px;width:378px;height:42px;background-image:url("images/author-name-marcotte.png"); }
+ul#authors li.rubin a span			{ bottom:47px;left:642px;width:225px;height:42px;background-image:url("images/author-name-rubin.png"); }
+ul#authors li.weychert a span		{ bottom:-1px;left:35px;width:326px;height:42px;background-image:url("images/author-name-weychert.png"); }
+
+ul#authors li a:hover { background-position:-105px 0; }
+ul#authors li a:hover span { background-position:0 -42px; }
+
+#credits {
+	background:url("images/bg-credits.png") no-repeat;
+	width:1077px;
+	height:122px;
+	margin-top:10px;
+}
+
+#footer {
+	margin:20px 0 40px;
+	padding-top:6px;
+	border-top:1px solid #dcdcd9;
+}
+#footer p {
+	float:right;
+	margin-right:-1px;
+	font-size:10px;
+	text-transform:uppercase;
+	color:#cbcbc7;
+}
+#footer p#copyright { float:left;margin:0; }
+#footer a {
+	color:#cbcbc7;
+	text-decoration:none;
+}
+#footer a:hover {
+	color:#c1c1bd;
+	border-bottom:2px solid #dfdfdb;
+}
